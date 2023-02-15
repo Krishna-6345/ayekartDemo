@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EYEKART</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+    
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+    
+     <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">Productive</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell" style="color: rgb(76, 74, 74); font-size: 20px;"> Notification</i>
+            
+          </a><!-- End Notification Icon -->
+
+        </li><!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-gear"></i>
+           
+          </a><!-- End Messages Icon -->
+
+          <!-- End Messages Dropdown Items -->
+
+        </li><!-- End Messages Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header>
+
+
+   <!-- ======= Sidebar ======= -->
+   <div class="sideColor">
+   <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-columns"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-receipt"></i>
+          <span>Order</span>
+        </a>
+      </li><!-- End Order Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-grid"></i>
+          <span>Production Plan</span>
+        </a>
+      </li><!-- End Production Plan Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-box-seam"></i>
+          <span>Lines</span>
+        </a>
+      </li><!-- End Lines Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-person"></i>
+          <span>Staff</span>
+        </a>
+      </li><!-- End Staff Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-hdd-stack"></i>
+          <span>Devices</span>
+        </a>
+      </li><!-- End Devices Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-shop"></i>
+          <span>Resources</span>
+        </a>
+      </li><!-- End Resources Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-clipboard-data"></i>
+          <span>Reports</span>
+        </a>
+      </li><!-- End Reports Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">
+          <i class="bi bi-bar-chart"></i>
+          <span>Statistics</span>
+        </a>
+      </li><!-- End Statistics Nav -->
+
+      <div class="ProfileImage">
+      <li>
+        <a class="nav-link nav-profile d-flex align-items-center pe-0" >
+          <img src="assets/img/profile-img.jpg" alt="Profile" class="profileImg">
+          <span class="d-none d-md-block dropdown-toggle ps-2">John Smitheres <br><span style="font-size: 10px;">shift suprvisor</span></span>
+        </a><!-- End Profile Iamge Icon -->
+      </li>
+    </div>
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+</div>
+
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Statistics</h1>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            
+            <!-- Reports -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="filter">
+                  <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                    <li class="dropdown-header text-start">
+                      <h6>Filter</h6>
+                    </li>
+
+                    <li><a class="dropdown-item" href="#">Today</a></li>
+                    <li><a class="dropdown-item" href="#">This Month</a></li>
+                    <li><a class="dropdown-item" href="#">This Year</a></li>
+                  </ul>
+                </div>
+
+                <div class="card-body">
+                  <h5 class="card-title">Revenue <br><span>QUATERLY REVENUE</span></h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'Targeted',
+                          data: [250, 450, 325, 900, 240, 460],
+                        }, {
+                          name: 'Actual',
+                          data: [240,  480 , 300, 750, 850, 200]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: .05
+                        },
+                        colors: ['#4e544e','#fca503'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.4,
+                            opacityTo: 0.8,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 1.5
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2018-09-19T00:00:00.000Z", "2018-09-19T01:30:00.000Z", "2018-09-19T02:30:00.000Z", "2018-09-19T03:30:00.000Z", "2018-09-19T04:30:00.000Z", "2018-09-19T05:30:00.000Z", "2018-09-19T06:30:00.000Z"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'dd/MM/yy HH:mm'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <button class="fullChart" style="margin-left: 20px; width: 680px;">Show full report</button>
+                  <!-- End Line Chart -->
+
+                </div>
+
+              </div>
+            </div><!-- End Reports -->
+
+            
+
+            <!-- Bar Chart -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Line Production Volume <br><span>Output by top 5 lines</span></h5>
+            <div id="barChart" style="min-height: 400px;" class="echart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                echarts.init(document.querySelector("#barChart")).setOption({
+                  xAxis: {
+                    type: 'category',
+                    data: ['Line 4', 'Line 2', 'Line 1', 'Line 3', 'Line 5']
+                  },
+                  yAxis: {
+                    type: 'value'
+                  },
+                  series: [{
+                    data: [875, 750, 925, 1000, 510],
+                    type: 'bar'
+                  }],
+                  colors: ['#5b5d5e','#5b5d5e','#5b5d5e','#5b5d5e','#fca503'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.4,
+                            opacityTo: 0.8,
+                            stops: [0, 90, 100]
+                          }
+                        }
+                });
+              });
+            </script>
+            <button class="fullChart" style="margin-left: 20px; width: 680px;">Show full report</button>
+            </div>
+
+        </div>
+      </div>
+            <!-- End Bar Chart -->
+
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+
+        <!-- Website Traffic -->
+        <div class="card">
+          <div class="filter">
+            <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+              <li class="dropdown-header text-start">
+                <h6>Filter</h6>
+              </li>
+
+              <li><a class="dropdown-item" href="#">Today</a></li>
+              <li><a class="dropdown-item" href="#">This Month</a></li>
+              <li><a class="dropdown-item" href="#">This Year</a></li>
+            </ul>
+          </div>
+
+          <div class="card-body pb-0">
+            <h5 class="card-title">Monthly Production Cost</h5>
+
+            <div id="trafficChart" style="min-height: 410px;" class="echart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                echarts.init(document.querySelector("#trafficChart")).setOption({
+                  tooltip: {
+                    trigger: 'item'
+                  },
+                  legend: {
+                    top: '5%',
+                    left: 'center'
+                  },
+                  series: [{
+                    name: 'Access From',
+                    type: 'pie',
+                    radius: ['80%', '70%'],
+                    avoidLabelOverlap: true,
+                    label: {
+                      show: false,
+                      position: 'center'
+                    },
+                    emphasis: {
+                      label: {
+                        show: true,
+                        fontSize: '18',
+                        fontWeight: 'bold'
+                      }
+                    },
+                    labelLine: {
+                      show: false
+                    },
+                    data: [{
+                        value: 25,
+                        name: 'Wages'
+                        
+                      },
+                      {
+                        value: 25,
+                        name: 'Material Cost'
+                      },
+                      {
+                        value: 40,
+                        name: 'Manufacturing Cost'
+                      },
+                      {
+                        value: 10,
+                        name: 'Outside service cost'
+                      }
+                    ],
+                    colors:[
+                    '#4e544e','#fca503','#4e544e','#4e544e'
+                    ]
+                  }]
+                });
+              });
+            </script>
+            <button class="fullChart" style="margin-left: 15px; width: 300px;">Show full report</button>
+          </div>
+        </div><!-- End Website Traffic -->
+
+
+
+          <!-- Production cost -->
+          <div class="card">
+            
+
+            <div class="card-body">
+              <h5 class="card-title">Production componenet cost </h5>
+
+              <!-- Bar Chart -->
+              <div id="productionCostChart" >
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  new ApexCharts(document.querySelector("#productionCostChart"), {
+                    series: [{
+                      data: [35,24,14,7]
+                    }],
+                    chart: {
+                      type: 'bar',
+                      height: 250
+                    },
+                    plotOptions: {
+                      bar: {
+                        borderRadius: 15,
+                        horizontal: true,
+                      }
+                    },
+                    dataLabels: {
+                      enabled: false
+                    },
+                    xaxis: {
+                      categories: ['Electronics assembly', 'Packaging', 'Unit Assembly', 'Final prep'],
+                    }
+                  }).render();
+                });
+              </script>
+              
+              </div>
+              <button class="fullChart" style="margin-left: 15px; width: 300px;">Show full report</button>
+              <!-- End Bar Chart -->
+
+            </div>
+          </div><!-- End Production cost -->
+
+          
+
+        </div><!-- End Right side columns -->
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+
+
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+</html>
